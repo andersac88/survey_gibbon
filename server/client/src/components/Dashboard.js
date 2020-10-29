@@ -3,7 +3,7 @@ import React from 'react';
 const Dashboard = () => {
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<h2>Dashboards</h2>
+			<h2>User Dashboards</h2>
 		</div>
 	);
 };
