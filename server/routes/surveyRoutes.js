@@ -7,7 +7,9 @@ const _ = require('lodash');
 const { Path } = require('path-parser');
 const { URL } = require('url');
 
-const Survey = mongoose.model('surveys');
+const Survey = require('../models/Survey');
+
+//const Survey = mongoose.model('surveys') also works and doesnt require that the survey be exported
 
 module.exports = (app) => {
 	app.get('/api/surveys', requireLogin, async (req, res) => {

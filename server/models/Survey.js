@@ -23,4 +23,6 @@ const suverySchema = new Schema({
 	lastResponded: Date,
 });
 
-mongoose.model('surveys', suverySchema);
+const Survey = mongoose.model('surveys', suverySchema);
+
+module.exports = Survey;
